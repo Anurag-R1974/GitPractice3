@@ -5,7 +5,7 @@ client = boto3.client('ec2', region_name='us-east-1')  # You can change region a
 response = client.run_instances(
     ImageId='ami-00a929b66ed6e0de6',
     InstanceType='t2.micro',
-    KeyName='USKEY1',
+    KeyName='USKEY2', # Changed USKEY1 TO USKEY2 by the windows Dev
     MinCount=1,
     MaxCount=1
 )
